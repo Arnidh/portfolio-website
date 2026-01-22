@@ -9,18 +9,18 @@ import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
 // Real photography images with descriptive titles
 const photographyImages = [
-  { id: "1", imageUrl: "/Photography/1.jpg", title: "Urban Architecture", description: "Modern cityscape perspective" },
-  { id: "2", imageUrl: "/Photography/DSC-0078.jpg", title: "Golden Hour Silhouette", description: "Sunset portrait composition" },
-  { id: "3", imageUrl: "/Photography/DSC09273.JPG", title: "Nature's Canvas", description: "Landscape photography" },
-  { id: "4", imageUrl: "/Photography/DSC_0533.JPG", title: "Architectural Details", description: "Structural elements in focus" },
-  { id: "5", imageUrl: "/Photography/DSC_0557.JPG", title: "Light & Shadow", description: "Play of natural lighting" },
-  { id: "6", imageUrl: "/Photography/DSC_0659.JPG", title: "Candid Moments", description: "Street photography" },
-  { id: "7", imageUrl: "/Photography/DSC_6454.jpg", title: "Portrait Study", description: "Character and expression" },
-  { id: "8", imageUrl: "/Photography/IMG_20250901_110009.jpg", title: "Everyday Beauty", description: "Finding art in the ordinary" },
-  { id: "9", imageUrl: "/Photography/IMG_2805.JPG", title: "Perspective Shift", description: "Unique angles and views" },
-  { id: "10", imageUrl: "/Photography/IMG_2867.JPG", title: "Color & Contrast", description: "Vibrant visual storytelling" },
-  { id: "11", imageUrl: "/Photography/Mehul Goyal_1 (1).jpg", title: "Creative Vision", description: "Artistic composition" },
-  { id: "12", imageUrl: "/Photography/_HPS1183.JPG", title: "Captured Essence", description: "Moment in time" },
+  { id: "1", imageUrl: "/Photography/1.jpg", title: "Solitude in the City", description: "Modern cityscape perspective" },
+  { id: "2", imageUrl: "/Photography/DSC-0078.jpg", title: "The Weight of a Day’s Work", description: "Sunset portrait composition" },
+  { id: "3", imageUrl: "/Photography/DSC09273.JPG", title: "Lines of Escape", description: "Landscape photography" },
+  { id: "4", imageUrl: "/Photography/DSC_0533.JPG", title: "Misty Mornings in the Tropics", description: "Structural elements in focus" },
+  { id: "5", imageUrl: "/Photography/DSC_0557.JPG", title: "Riding the Waves", description: "Play of natural lighting" },
+  { id: "6", imageUrl: "/Photography/DSC_0659.JPG", title: "Waiting for the Catch", description: "Street photography" },
+  { id: "7", imageUrl: "/Photography/DSC_6454.jpg", title: "Colors of the Bazaar", description: "Character and expression" },
+  { id: "8", imageUrl: "/Photography/IMG_20250901_110009.jpg", title: "Patterns of Urban Rhythm", description: "Finding art in the ordinary" },
+  { id: "9", imageUrl: "/Photography/IMG_2805.JPG", title: "Afternoon Rest", description: "Unique angles and views" },
+  { id: "10", imageUrl: "/Photography/IMG_2867.JPG", title: "The Fruit Seller’s Gaze", description: "Vibrant visual storytelling" },
+  { id: "11", imageUrl: "/Photography/Mehul Goyal_1 (1).jpg", title: "Lost Between Steps", description: "Artistic composition" },
+  { id: "12", imageUrl: "/Photography/_HPS1183.JPG", title: "Strings in Motion", description: "Moment in time" },
 ];
 
 
