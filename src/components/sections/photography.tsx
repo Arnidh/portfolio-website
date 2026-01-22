@@ -1,25 +1,37 @@
-import PhotographyGrid from "./photography-grid";
+"use client";
+
 import MotionWrapper from "../motion-wrapper";
 import { communityLeadership } from "@/lib/data";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { useState } from "react";
+import Image from "next/image";
+import { X, ChevronLeft, ChevronRight } from "lucide-react";
 
-// Real photography images
+// Real photography images with descriptive titles
 const photographyImages = [
-  { id: "1", imageUrl: "/Photography/1.jpg", description: "Photography", location: "", year: "" },
-  { id: "2", imageUrl: "/Photography/DSC-0078.jpg", description: "Photography", location: "", year: "" },
-  { id: "3", imageUrl: "/Photography/DSC09273.JPG", description: "Photography", location: "", year: "" },
-  { id: "4", imageUrl: "/Photography/DSC_0533.JPG", description: "Photography", location: "", year: "" },
-  { id: "5", imageUrl: "/Photography/DSC_0557.JPG", description: "Photography", location: "", year: "" },
-  { id: "6", imageUrl: "/Photography/DSC_0659.JPG", description: "Photography", location: "", year: "" },
-  { id: "7", imageUrl: "/Photography/DSC_6454.jpg", description: "Photography", location: "", year: "" },
-  { id: "8", imageUrl: "/Photography/IMG_20250901_110009.jpg", description: "Photography", location: "", year: "" },
-  { id: "9", imageUrl: "/Photography/IMG_2805.JPG", description: "Photography", location: "", year: "" },
-  { id: "10", imageUrl: "/Photography/IMG_2867.JPG", description: "Photography", location: "", year: "" },
-  { id: "11", imageUrl: "/Photography/Mehul Goyal_1 (1).jpg", description: "Photography", location: "", year: "" },
-  { id: "12", imageUrl: "/Photography/_HPS1183.JPG", description: "Photography", location: "", year: "" },
+  { id: "1", imageUrl: "/Photography/1.jpg", title: "Urban Architecture", description: "Modern cityscape perspective" },
+  { id: "2", imageUrl: "/Photography/DSC-0078.jpg", title: "Golden Hour Silhouette", description: "Sunset portrait composition" },
+  { id: "3", imageUrl: "/Photography/DSC09273.JPG", title: "Nature's Canvas", description: "Landscape photography" },
+  { id: "4", imageUrl: "/Photography/DSC_0533.JPG", title: "Architectural Details", description: "Structural elements in focus" },
+  { id: "5", imageUrl: "/Photography/DSC_0557.JPG", title: "Light & Shadow", description: "Play of natural lighting" },
+  { id: "6", imageUrl: "/Photography/DSC_0659.JPG", title: "Candid Moments", description: "Street photography" },
+  { id: "7", imageUrl: "/Photography/DSC_6454.jpg", title: "Portrait Study", description: "Character and expression" },
+  { id: "8", imageUrl: "/Photography/IMG_20250901_110009.jpg", title: "Everyday Beauty", description: "Finding art in the ordinary" },
+  { id: "9", imageUrl: "/Photography/IMG_2805.JPG", title: "Perspective Shift", description: "Unique angles and views" },
+  { id: "10", imageUrl: "/Photography/IMG_2867.JPG", title: "Color & Contrast", description: "Vibrant visual storytelling" },
+  { id: "11", imageUrl: "/Photography/Mehul Goyal_1 (1).jpg", title: "Creative Vision", description: "Artistic composition" },
+  { id: "12", imageUrl: "/Photography/_HPS1183.JPG", title: "Captured Essence", description: "Moment in time" },
 ];
 
+
 export default function ExtracurricularsSection() {
+  const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
+
+  const openLightbox = (index: number) => setLightboxIndex(index);
+  const closeLightbox = () => setLightboxIndex(null);
+  const nextImage = () => setLightboxIndex((prev) => (prev !== null ? (prev + 1) % photographyImages.length : null));
+  const prevImage = () => setLightboxIndex((prev) => (prev !== null ? (prev - 1 + photographyImages.length) % photographyImages.length : null));
+
   return (
     <section id="extracurriculars" className="py-16 sm:py-24">
       <MotionWrapper>
@@ -82,10 +94,90 @@ export default function ExtracurricularsSection() {
             </p>
           </div>
         </MotionWrapper>
+
         <div className="mt-12">
-          <PhotographyGrid images={photographyImages} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {photographyImages.map((image, index) => (
+              <MotionWrapper key={image.id} delay={0.05 * index}>
+                <div
+                  className="relative group overflow-hidden rounded-lg aspect-[4/3] cursor-pointer"
+                  onClick={() => openLightbox(index)}
+                >
+                  <Image
+                    src={image.imageUrl}
+                    alt={image.title}
+                    fill
+                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                    className="object-cover transition-transform duration-300 ease-in-out group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end p-4">
+                    <div className="text-white">
+                      <p className="font-semibold text-lg">{image.title}</p>
+                      <p className="text-sm text-gray-300">{image.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </MotionWrapper>
+            ))}
+          </div>
         </div>
       </div>
+
+      {/* Lightbox */}
+      {lightboxIndex !== null && (
+        <div
+          className="fixed inset-0 z-50 bg-black/95 flex items-center justify-center p-4"
+          onClick={closeLightbox}
+        >
+          {/* Close Button */}
+          <button
+            className="absolute top-4 right-4 text-white hover:text-accent transition-colors z-10"
+            onClick={closeLightbox}
+          >
+            <X className="w-8 h-8" />
+          </button>
+
+          {/* Navigation Buttons */}
+          <button
+            className="absolute left-4 text-white hover:text-accent transition-colors z-10"
+            onClick={(e) => {
+              e.stopPropagation();
+              prevImage();
+            }}
+          >
+            <ChevronLeft className="w-10 h-10" />
+          </button>
+          <button
+            className="absolute right-4 text-white hover:text-accent transition-colors z-10"
+            onClick={(e) => {
+              e.stopPropagation();
+              nextImage();
+            }}
+          >
+            <ChevronRight className="w-10 h-10" />
+          </button>
+
+          {/* Image Container */}
+          <div className="relative max-w-7xl max-h-[85vh] w-full h-full flex flex-col items-center justify-center" onClick={(e) => e.stopPropagation()}>
+            <div className="relative w-full h-full">
+              <Image
+                src={photographyImages[lightboxIndex].imageUrl}
+                alt={photographyImages[lightboxIndex].title}
+                fill
+                className="object-contain"
+                sizes="100vw"
+                priority
+              />
+            </div>
+            {/* Image Info */}
+            <div className="mt-4 text-center text-white">
+              <h3 className="text-2xl font-bold">{photographyImages[lightboxIndex].title}</h3>
+              <p className="text-gray-300 mt-1">{photographyImages[lightboxIndex].description}</p>
+              <p className="text-sm text-gray-400 mt-2">{lightboxIndex + 1} / {photographyImages.length}</p>
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
