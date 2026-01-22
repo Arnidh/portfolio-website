@@ -1,0 +1,58 @@
+{
+  "heroImage": {
+    "id": "hero-background",
+    "description": "Abstract network of glowing nodes and connections on a dark background.",
+    "imageUrl": "https://images.unsplash.com/photo-1531297484001-80022131f5a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxhYnN0cmFjdCUyMHRlY2h8ZW58MHx8fHwxNzY5MDgxNzYwfDA&ixlib=rb-4.1.0&q=80&w=1920",
+    "imageHint": "abstract tech"
+  },
+  "placeholderImages": [
+    {
+      "id": "photo1",
+      "description": "A stark, geometric architectural detail against a clear sky.",
+      "imageUrl": "https://images.unsplash.com/photo-1638814243849-cf5c21d2bc6b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxhcmNoaXRlY3R1cmUlMjBtb25vY2hyb21lfGVufDB8fHx8MTc2OTA1MzQ4MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "architecture monochrome",
+      "location": "Berlin",
+      "year": "2023"
+    },
+    {
+      "id": "photo2",
+      "description": "Misty mountains at dawn with layers of fog.",
+      "imageUrl": "https://images.unsplash.com/photo-1601281426795-9fedf41df8d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxtb3VudGFpbiUyMGxhbmRzY2FwZXxlbnwwfHx8fDE3NjkwNDI4NTF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "mountain landscape",
+      "location": "Kyoto",
+      "year": "2022"
+    },
+    {
+      "id": "photo3",
+      "description": "A long exposure shot of city traffic at night.",
+      "imageUrl": "https://images.unsplash.com/photo-1531819177115-428566ccfb50?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxjaXR5JTIwbmlnaHR8ZW58MHx8fHwxNzY4OTkyOTc0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "city night",
+      "location": "Tokyo",
+      "year": "2024"
+    },
+    {
+      "id": "photo4",
+      "description": "Close-up of a complex mechanical watch movement.",
+      "imageUrl": "https://images.unsplash.com/photo-1656433031375-5042f5afe894?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHx3YXRjaCUyMG1hY3JvfGVufDB8fHx8MTc2OTA3ODI0MHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "watch macro",
+      "location": "Zürich",
+      "year": "2021"
+    },
+    {
+      "id": "photo5",
+      "description": "An empty subway platform with leading lines.",
+      "imageUrl": "https://images.unsplash.com/photo-1541627748063-8f36cd6ff6f0?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxzdWJ3YXklMjBlbXB0eXxlbnwwfHx8fDE3NjkwNzgyNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "subway empty",
+      "location": "New York",
+      "year": "2023"
+    },
+    {
+      "id": "photo6",
+      "description": "Shadows and light creating abstract patterns on a textured wall.",
+      "imageUrl": "https://images.unsplash.com/photo-1696370618575-d8116d14e466?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxhYnN0cmFjdCUyMHNoYWRvd3xlbnwwfHx8fDE3NjkwNzgyNDF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "abstract shadow",
+      "location": "Lisbon",
+      "year": "2024"
+    }
+  ]
+}
