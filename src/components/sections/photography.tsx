@@ -20,7 +20,6 @@ const photographyImages = [
   { id: "9", imageUrl: "/Photography/IMG_2805.JPG", title: "Afternoon Rest", description: "Unique angles and views" },
   { id: "10", imageUrl: "/Photography/IMG_2867.JPG", title: "The Fruit Seller’s Gaze", description: "Vibrant visual storytelling" },
   { id: "11", imageUrl: "/Photography/Mehul Goyal_1 (1).jpg", title: "Lost Between Steps", description: "Artistic composition" },
-  { id: "12", imageUrl: "/Photography/_HPS1183.JPG", title: "Strings in Motion", description: "Moment in time" },
 ];
 
 
