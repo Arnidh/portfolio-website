@@ -41,13 +41,33 @@ export const projects = [
     },
   },
   {
+    title: "Agentic Bias Checkpoint Auditor",
+    description: "A powerful tool to identify where bias originates in your ML pipeline by analyzing three critical checkpoints: Data → Features → Model.",
+    stack: ["Python", "Agentic AI", "LLMs", "RAG", "LangChain", "Scientific Reasoning", "Experiment Analysis", "Autonomous Agents"],
+    links: {
+      github: "https://github.com/Sneha-a10/Bias_auditor",
+      demo: "",
+      paper: "",
+    },
+  },
+  {
+    title: "TraceMaint",
+    description: "Built an explainable predictive maintenance system using decision traces and constrained LLMs to deliver transparent, auditable maintenance recommendations",
+    stack: ["Python", "Agentic AI", "LLMs", "RAG", "LangChain", "Scientific Reasoning", "Experiment Analysis", "Autonomous Agents"],
+    links: {
+      github: "https://github.com/Sneha-a10/beachhack-sanjukul7356",
+      demo: "",
+      paper: "",
+    },
+  },
+  {
     title: "ArTaleStudios",
     description: "An AI-driven marketplace using Google Cloud's generative AI to empower Indian artisans and tell their stories through unique, animated videos in the style of Krish Trish and Balti Boy.",
     stack: ["Next.js", "MERN", "Tailwind", "TypeScript", "API Integration"],
     links: {
-      github: "https://github.com/Sneha-a10/ArTaleStudios",
+      github: "https://github.com",
       demo: "",
-      paper: "",
+      paper: "#",
     },
   },
   {
@@ -60,6 +80,33 @@ export const projects = [
       paper: "",
     },
   },
+];
+
+export const leetcodeConfig = {
+  username: "Mehulgoyal",
+};
+
+export const blogPosts = [
+  {
+    title: "I Don’t Have a Big Plan, I’m Just Moving",
+    description: "I don’t have a five-year plan. I barely have a plan for next week, and for the longest time, that bothered me more than I like to admit.",
+    date: "February 11, 2026",
+    tags: ["Life", "Growth", "Developer-Experience", "Career"],
+    links: [
+      { platform: "Medium", url: "https://medium.com/@mehulgoyal238/i-dont-have-a-big-plan-i-m-just-moving-c1ae2b3198cf" },
+      { platform: "Hashnode", url: "https://mehulgoyal.hashnode.dev/i-dont-have-a-big-plan-im-just-moving" }
+    ]
+  },
+  {
+    title: "A Month That Shifted Something",
+    description: "A month ago, I didn’t decide to “transform my life.”",
+    date: "February 16, 2026",
+    tags: ["Life", "Growth", "Developer-Experience", "Career"],
+    links: [
+      { platform: "Medium", url: "https://medium.com/@mehulgoyal238/a-month-that-shifted-something-7f4ab7f89dbe" },
+      { platform: "Hashnode", url: "https://mehulgoyal.hashnode.dev/a-month-that-shifted-something" }
+    ]
+  }
 ];
 
 export const skills = [

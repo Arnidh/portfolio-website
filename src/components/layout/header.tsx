@@ -5,8 +5,10 @@ const navItems = [
   { name: "About", href: "#about" },
   { name: "Projects", href: "#projects" },
   { name: "Skills", href: "#skills" },
+  { name: "LeetCode", href: "#leetcode" },
   { name: "Resume", href: "#resume" },
-  { name: "Extracurriculars", href: "#extracurriculars" },
+  { name: "Blog", href: "#blog" },
+  { name: "Photography", href: "#extracurriculars" },
   { name: "Contact", href: "#contact" },
 ];
 
