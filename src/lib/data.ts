@@ -55,7 +55,7 @@ export const projects = [
     description: "Built an explainable predictive maintenance system using decision traces and constrained LLMs to deliver transparent, auditable maintenance recommendations",
     stack: ["Python", "Agentic AI", "LLMs", "RAG", "LangChain", "Scientific Reasoning", "Experiment Analysis", "Autonomous Agents"],
     links: {
-      github: "https://github.com/Sneha-a10/beachhack-sanjukul7356",
+      github: "https://github.com/Sneha-a10/Sensor-failure-tracer",
       demo: "",
       paper: "",
     },
