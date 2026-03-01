@@ -1,6 +1,6 @@
 import { contact } from "@/lib/data";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail } from "lucide-react";
+import { Github, Linkedin, Mail, Code2 } from "lucide-react";
 import Link from "next/link";
 import MotionWrapper from "../motion-wrapper";
 
@@ -29,6 +29,11 @@ export default function ContactSection() {
                         <Button variant="outline" size="icon" asChild>
                             <Link href={contact.linkedin} target="_blank" aria-label="LinkedIn">
                                 <Linkedin className="h-5 w-5" />
+                            </Link>
+                        </Button>
+                        <Button variant="outline" size="icon" asChild>
+                            <Link href={contact.leetcode} target="_blank" aria-label="LeetCode">
+                                <Code2 className="h-5 w-5" />
                             </Link>
                         </Button>
                     </div>

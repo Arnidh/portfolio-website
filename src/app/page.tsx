@@ -7,7 +7,7 @@ import ExtracurricularsSection from '@/components/sections/photography';
 import AboutSection from '@/components/sections/about';
 import ContactSection from '@/components/sections/contact';
 import ResumeSection from '@/components/sections/resume';
-import LeetCodeStats from '@/components/sections/leetcode-stats';
+
 import BlogSection from '@/components/sections/blog';
 
 export default function Home() {
@@ -21,10 +21,7 @@ export default function Home() {
           <ProjectsSection />
           <SkillsSection />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
-            <LeetCodeStats />
-            <ResumeSection />
-          </div>
+          <ResumeSection />
 
           <BlogSection />
           <ExtracurricularsSection />

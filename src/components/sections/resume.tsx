@@ -6,7 +6,7 @@ import MotionWrapper from "../motion-wrapper";
 
 export default function ResumeSection() {
     return (
-        <section id="resume" className="h-full">
+        <section id="resume" className="py-16 sm:py-24">
             <MotionWrapper>
                 <Card className="h-full mx-auto text-center transition-all duration-300 hover:shadow-xl hover:shadow-primary/20 hover:border-primary flex flex-col justify-center">
                     <CardContent className="p-8 md:p-12 !pt-8 md:!pt-12">
@@ -18,13 +18,13 @@ export default function ResumeSection() {
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button asChild size="lg">
-                                <a href="/MehulGoyal_Resume.pdf" download="MehulGoyal_Resume.pdf">
+                                <a href="/MehulGoyal_Resume_Updated.pdf" download="MehulGoyal_Resume_Updated.pdf">
                                     <Download className="mr-2 h-5 w-5" />
                                     Download Resume
                                 </a>
                             </Button>
                             <Button asChild size="lg" variant="outline">
-                                <Link href="/MehulGoyal_Resume.pdf" target="_blank" rel="noopener noreferrer">
+                                <Link href="/MehulGoyal_Resume_Updated.pdf" target="_blank" rel="noopener noreferrer">
                                     <Eye className="mr-2 h-5 w-5" />
                                     View Resume
                                 </Link>

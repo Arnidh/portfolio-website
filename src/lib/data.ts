@@ -151,6 +151,7 @@ export const contact = {
   email: "mehulgoyal238@gmail.com",
   github: "https://github.com/Arnidh",
   linkedin: "https://linkedin.com/in/goyalmehul",
+  leetcode: "https://leetcode.com/u/Mehulgoyal/",
 }
 
 export const funProjects = [
