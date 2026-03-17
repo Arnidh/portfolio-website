@@ -18,13 +18,13 @@ export default function ResumeSection() {
                         </p>
                         <div className="mt-8 flex flex-col sm:flex-row items-center justify-center gap-4">
                             <Button asChild size="lg">
-                                <a href="/MehulGoyal_Resume_Updated.pdf" download="MehulGoyal_Resume_Updated.pdf">
+                                <a href="/Mehul_Resume.pdf" download="Mehul_Resume.pdf">
                                     <Download className="mr-2 h-5 w-5" />
                                     Download Resume
                                 </a>
                             </Button>
                             <Button asChild size="lg" variant="outline">
-                                <Link href="/MehulGoyal_Resume_Updated.pdf" target="_blank" rel="noopener noreferrer">
+                                <Link href="/Mehul_Resume.pdf" target="_blank" rel="noopener noreferrer">
                                     <Eye className="mr-2 h-5 w-5" />
                                     View Resume
                                 </Link>
